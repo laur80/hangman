@@ -1,4 +1,4 @@
-var ENGLISH_WORDS = [
+let ENGLISH_WORDS = [
   "their",
   "would",
   "about",
