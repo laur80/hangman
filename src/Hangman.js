@@ -45,6 +45,7 @@ function Hangman (){
   function handleGuess(evt) {
     let ltr = evt.target.value;
     setState(st => ({
+      ...st,
       guessed: st.guessed.add(ltr),
       nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : 1)
     }));
